@@ -4,16 +4,57 @@
     <meta charset="utf-8">
     <title>웹만들기-JAVA</title>
   </head>
+  <link rel="stylesheet" href="style.css">
   <body>
     <h1><a href="index.html">CODING</a></h1>
+    <input type="button" value="night" onclick="
+      document.querySelector('body').style.backgroundColor = 'black';
+      document.querySelector('body').style.color = 'white';
+    ">
+    <input type="button" value="day" onclick="
+      document.querySelector('body').style.backgroundColor='white';
+      document.querySelector('body').style.color='black';
+    ">
+    <input id="night_day" type="button" value="night" onclick="
+    if(document.querySelector('#night_day').value === 'night'){
+    document.querySelector('body').style.backgroundColor = 'black';
+    document.querySelector('body').style.color = 'white';
+    document.querySelector('#night_day').value = 'day'
+   } else{
+      document.querySelector('body').style.backgroundColor='white';
+    document.querySelector('body').style.color='black';
+    document.querySelector('#night_day').value = 'night'
+   }
+
+    ">
+  <div id="grid">
   <ol>
     <li><a href="1.html">HTML</a></li>
     <li><a href="2.html">CSS</a></li>
     <li><a href="3.html">JAVA</a></li>
     <li><a href="4.html">내가 나아가고싶은 것</a></li>
   </ol>
+  <div id="article">
   <h2>JAVA?</h2>
     <p>
+      html vs javascript
+      음악회에서 음악이 나오는 순서를 program 이라고 함
+      따라서 이 순서를 만드는 것을 programming
+      만드는 사람을 programer
+      html은 웹을 묘사하기 위한 것이기 떄문에 시간의 순서에 따라 할 필요가 없음
+      javascript 사용자와 상호작용을 위한 것 따라서 그러기 위해서는 시간의 순서에 따라서 작동해야해서 프로그래밍 언어라고 함
+      시간의 나열에 따라서 실행 하고 싶은 것이 나아가 조건에 따라, 반복을 원해 또 복잡성을 단순화하기 위해 언어가 고려되었다.</P>
+    <p>
+      <a href="ex4.html">비교연산자 예문</a>
+      그동안 데이터 타입은 Number/String/Boolean을 배웠다
+      Boolean값은 true/false 두가지 뿐이다
+      그리고 if 절 뒤에는 Boolean값만 온다. if 뒤 true 일때 첫번째 중괄호가 실행되고 else 뒤가 무시된다
+      false일때는 반대이다
+      <a href="ex5.html">조건문 기본예제</a>
     </p>
+
+    </p>
+  </div>
+  </div>
   </body>
 </html>

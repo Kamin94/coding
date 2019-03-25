@@ -3,9 +3,19 @@
   <head>
     <meta charset="utf-8">
     <title>웹만들기-HTML</title>
+  <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <h1><a href="index.html">CODING</a></h1>
+    <input type="button" value="night" onclick="
+      document.querySelector('body').style.backgroundColor = 'black';
+      document.querySelector('body').style.color = 'white';
+    ">
+    <input type="button" value="day" onclick="
+      document.querySelector('body').style.backgroundColor='white';
+      document.querySelector('body').style.color='black';
+    ">
+  <div id="grid">
   <ol>
     <li><a href="1.html">HTML</a></li>
     <li><a href="2.html">CSS</a></li>
@@ -13,6 +23,7 @@
     <li><a href="4.html">내가 나아가고싶은 것</a></li>
 
   </ol>
+  <div id="article">
   <h2>HTML?</h2>
 
     <p><a href="https://www.w3.org/TR/html51/" target="_blank" title="html5.1 specifiation">HTML</a>은
@@ -22,5 +33,7 @@
     </p>
     <img src="cording.jpg" width="75%">
     <p style="margin-top:45px;">W3C<br>www.advancedwebranking.com/html/<br>unsplash.com</p>
+    </div>
+    </div>
   </body>
 </html>
